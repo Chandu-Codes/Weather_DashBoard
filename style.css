@@ -13,14 +13,23 @@ body {
 
 #container {
     background-color: rgba(255, 255, 255, 0.9);
-    margin-top: -150px;
+    margin-top: 0px;
     padding: 40px;
     border-radius: 12px;
     width: 90%;
     max-width: 550px;
     text-align: center;
     box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+    overflow-y: auto;
+    max-height: 600px;
 }
+
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 
 h1 {
     color: midnightblue;
@@ -74,7 +83,8 @@ button {
 }
 
 .label {
-    font-size: 11px;
+    font-weight: bold;
+    font-size: 15px;
     color: gray;
 }
 
@@ -90,6 +100,10 @@ button {
     display: flex;
     gap: 12px;
     overflow-x: auto;
+}
+
+.daily-forecast::-webkit-scrollbar{
+    display: none;
 }
 
 .daily-item {
@@ -108,6 +122,10 @@ button {
     gap: 12px;
     overflow-x: auto;
     padding-bottom: 10px;
+}
+
+.hourly-forecast::-webkit-scrollbar{
+    display: none;
 }
 
 .hour-item {
