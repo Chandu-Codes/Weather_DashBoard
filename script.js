@@ -129,3 +129,9 @@ function updateHourlyForecast(weather) {
         container.appendChild(div);
     }
 }
+
+document.getElementById("cityInput").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        searchWeather(); // Call your search function
+    }
+});
